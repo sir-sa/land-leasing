@@ -39,17 +39,14 @@ class SeasonalController extends Controller
     public function store(Request $request)
     {
             $seasonals = Seasonal::create(array_merge($request->all()));
-        if ($request->hasFile('image') || $request->hasFile('title_deed')) {
+        if ($request->hasFile('image')){
             $file = $request->file('image');
-            $file1 = $request->file('title_deed');
             $fileName = time() . '.' . $file->getClientOriginalExtension();
-            $fileName1 = time() . '.' . $file1->getClientOriginalExtension();
             $request->image->move('frontend/images/', $fileName);
-            $request->gtitle_deed->move('frontend/images/', $fileName1);
+
             
             $seasonals->update([
                 'image' => $fileName,
-                'title_deed' => $fileName1,
                
             ]);
            
@@ -68,7 +65,7 @@ class SeasonalController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified resource.s
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

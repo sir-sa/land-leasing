@@ -89,8 +89,8 @@
         </div>
          
     <!-- END nav -->
-    @foreach($images as $image)
-    <div class="hero-wrap js-fullheight" style="background-image: url('{{$image->image}}');" data-stellar-background-ratio="0.5">
+    <!-- @foreach($images as $image) -->
+    <div class="hero-wrap js-fullheight" style="background-image:url('frontend/images/bg_2.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
@@ -103,7 +103,7 @@
         </div>
       </div>
     </div>
-    @endforeach
+    <!-- @endforeach -->
     <section class="ftco-section ftco-no-pt">
         <div class="container">
             <div class="row">
@@ -208,9 +208,7 @@
                             <div class="wrap">
                                         <div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url('{{asset('public/frontend/images/'.$post->image)}}');">
                                         </div>
-                                          <div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url('{{asset('public/frontend/images/'.$post->title_deed)}}');">
-
-                                        </div>  
+                                         
                                          
                                         <div class="text text-center px-4">
                                             <h3><a href="#">{{$post->name}}</a></h3>
@@ -298,7 +296,7 @@
                   <div class="text">
                     <p class="mb-4">{{$testimonial->description}}</p>
                     <div class="d-flex align-items-center">
-                        <div class="user-img" style="background-image: url({{$testimonial->image}})"></div>
+                        <div class="user-img" style="background-image: url('{{asset('public/frontend/images/'.$testimonial->image)}}');"></div>
                         <div class="pl-3">
                             <p class="name">{{$testimonial->name}}</p>
                             <span class="position">Marketing Manager</span>
@@ -328,8 +326,8 @@
 
                   <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry justify-content-end">
-                      <a href="blog-single.html" class="block-20" style="background-image: url('/{{$blog->image}}');">
-                      </a>
+                      <a href="blog-single.html" class="block-20" style="background-image: url('{{asset('public/frontend/images/'.$blog->image)}}');">
+                      </a> 
                       <div class="text p-4 float-right d-block">
                         <div class="topper d-flex align-items-center">
                             <div class="one py-2 pl-3 pr-1 align-self-stretch">

@@ -48,17 +48,6 @@ class PostsController extends Controller
             return   $request;
             $posts ->image ='image';
         } 
-        if ($request->file('title_deed')) {
-            $file = $request->file('title_deed');    
-            $extension = $file->getClientOriginalExtension(); //getting image extension
-            $filename= time() . '.' . $extension;
-            $file ->move('public/frontend/images/',$filename);
-            $posts->title_deed =$filename;
-        } else {
-            return   $request;
-            $posts ->title_deed ='title_deed';
-        }
-
         
         $posts->name=$request->input('name');
         $posts->cash=$request->input('cash');

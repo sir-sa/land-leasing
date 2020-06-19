@@ -186,8 +186,8 @@
                             <div class="wrap">
                               <div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url('/{{$seasonal->image}}');">
                               </div>
-                              <div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url('/{{$seasonal->title_deed}}');">
-                              </div>
+                              <!-- <div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url('/{{$seasonal->title_deed}}');">
+                              </div> -->
                               <div class="text text-center px-4">
 
                                 <h3><a href="#">{{$seasonal->heading}}</a></h3>

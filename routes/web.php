@@ -26,9 +26,9 @@ Route::get('/services', function () {
 Route::get('/blog', function () {
     return view('blog');
 });
-Route::get('/contact', function () {
-    return view('contact');
-});
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
  Route::get('/dashboard', function () {
      return view('dashboard');
  });
@@ -49,6 +49,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::resource('/', 'WelcomeController');
+Route::resource('/contact', 'ContactsController');
 Route::namespace('Admin')->prefix('adminn')->name('adminn.')->middleware('can:manage-user')->group(function(){
     Route::resource('/users', 'UsersController',['except'=>['show','create','store']]);
     Route::resource('/blog', 'BlogsController');

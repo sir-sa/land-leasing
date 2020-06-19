@@ -16,7 +16,7 @@ class CreateSeasonalsTable extends Migration
         Schema::create('seasonals', function (Blueprint $table) {
             $table->id();
             $table->string('image');
-            $table->string('title_deed');
+             
             $table->string('heading');
             $table->text('description');
             $table->string('email')->unique();

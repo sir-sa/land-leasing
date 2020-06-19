@@ -181,10 +181,10 @@
                           <label for="image">Image</label>
                           <input type="file" name = "image" id = "image" class="form-control" required>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                           <label for="title_deed">Title_deed</label>
                           <input type="file" name = "title_deed" id = "title_deed" class="form-control" required>
-                        </div>
+                        </div> -->
                         <div class="form-group">
                           <label for="heading">Heading</label>
                           <input type="text" name = "heading" id = "heading" class="form-control" required>

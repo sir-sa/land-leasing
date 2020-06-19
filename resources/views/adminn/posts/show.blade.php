@@ -176,10 +176,9 @@
 
                 <div class="table-responsive">
                    <div class="wrap">
-                      <div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url('/{{$posts->image}}');">
+                      <div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url('{{asset('public/frontend/images/'.$posts->image)}}');">
                     </div>
-                     <div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url('/{{$posts->title_deed}}');">
-                    </div>  
+                       
                       
                        <strong>Your_Name</strong>
                          

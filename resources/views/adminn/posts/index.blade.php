@@ -193,7 +193,7 @@
                               <!--   <div class="seasonal img d-flex align-items-center justify-content-center" style="background-image: url('{{asset('public/frontend/images/'.$post->title_deed)}}');">
                               </div>  --> 
 
-                                <img src="{{asset('public/frontend/images/'.$post->title_deed)}}" alt="title">  
+                                <!-- <img src="{{asset('public/frontend/images/'.$post->title_deed)}}" alt="title"> -->  
                               <div class="text text-center px-4">
                                  
                                 <h3><a href="#">{{$post->name}}</a></h3>
